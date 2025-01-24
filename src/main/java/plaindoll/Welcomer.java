@@ -1,6 +1,7 @@
 package plaindoll;
 
 public class Welcomer{
+	
 	public String sayWelcome() {
 		return "Welcome home, good hunter. What is it your desire?";
 	}
@@ -12,5 +13,8 @@ public class Welcomer{
 	}
 	public String saySome(){
 		return "something in the way";
+	}
+	public String sayHunter() {
+		return "Pay attention, hunter!";
 	}
 }
