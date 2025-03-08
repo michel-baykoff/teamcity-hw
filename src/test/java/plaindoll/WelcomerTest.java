@@ -32,6 +32,6 @@ public class WelcomerTest {
 	}
 	@Test
 	public void sayHunterReplica(){
-		assertThat(welcomer.saySome(), containsString("hunter"));
+		assertThat(welcomer.sayHunterReplica(), containsString("hunter"));
 	}
 }
