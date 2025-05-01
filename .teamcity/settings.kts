@@ -35,6 +35,10 @@ project {
 object Build : BuildType({
     name = "Build"
 
+    params {
+        param("mvn.build.goal", "test")
+    }
+
     vcs {
         root(DslContext.settingsRoot)
     }
