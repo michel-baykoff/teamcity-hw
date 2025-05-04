@@ -80,6 +80,7 @@ object Build : BuildType({
         maven {
             name = "Maven test"
             id = "Maven_test"
+            executionMode = BuildStep.ExecutionMode.RUN_ON_SUCCESS
 
             conditions {
                 doesNotEqual("teamcity.build.branch", "master")
