@@ -77,6 +77,15 @@ object Build : BuildType({
             goals = "clean deploy"
             userSettingsSelection = "settings.xml"
         }
+        maven {
+            name = "Maven test"
+            id = "Maven_test"
+
+            conditions {
+                doesNotEqual("teamcity.build.branch", "master")
+            }
+            goals = "clean test"
+        }
     }
 
     triggers {
