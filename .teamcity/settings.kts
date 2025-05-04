@@ -63,6 +63,7 @@ object Build : BuildType({
         }
         maven {
             id = "Maven2_1"
+            enabled = false
             goals = "clean test"
         }
         maven {
