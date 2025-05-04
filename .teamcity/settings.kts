@@ -65,6 +65,17 @@ object Build : BuildType({
             id = "Maven2_1"
             goals = "clean test"
         }
+        maven {
+            name = "Deploy on master"
+            id = "Deploy_on_master"
+            executionMode = BuildStep.ExecutionMode.RUN_ON_SUCCESS
+
+            conditions {
+                equals("teamcity.build.branch", "master")
+            }
+            goals = "clean deploy"
+            userSettingsSelection = "settings.xml"
+        }
     }
 
     triggers {
