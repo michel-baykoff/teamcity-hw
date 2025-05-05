@@ -9,15 +9,15 @@ public class Welcomer {
         return "Farewell, good hunter. May you find your worth in waking world.";
     }
 
-    public String sayNeedGold(){
+    public String sayNeedGold() {
         return "Not enough gold";
     }
 
-    public String saySome(){
+    public String saySome() {
         return "something in the way";
     }
 
     public String sayTheMoonIsPresence() {
-        return "The moon is a presence watching us silently.";
+        return "The moon is a presence watching over you, hunter.";
     }
 }
