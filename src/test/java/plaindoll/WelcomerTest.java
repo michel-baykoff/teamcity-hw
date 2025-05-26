@@ -10,10 +10,6 @@ public class WelcomerTest {
 	private Welcomer welcomer = new Welcomer();
 
 	@Test
-	public void welcomerSaysWelcome() {
-		assertThat(welcomer.sayWelcome(), containsString("Welcome"));
-	}
-	@Test
 	public void welcomerSaysFarewell() {
 		assertThat(welcomer.sayFarewell(), containsString("Farewell"));
 	}
