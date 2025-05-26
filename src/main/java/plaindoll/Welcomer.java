@@ -1,7 +1,7 @@
 package plaindoll;
 
 public class Welcomer{
-	public String sayHello() {
+	public String getHunterReply() {
 		return "Get over here, hunter";
 	}
 	public String sayWelcome() {
