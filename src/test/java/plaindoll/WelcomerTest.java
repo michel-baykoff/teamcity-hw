@@ -31,3 +31,8 @@ public class WelcomerTest {
 		assertThat(welcomer.saySome(), containsString("something"));
 	}
 }
+public void testSayHunterContainsHunter() {
+        Welcomer welcomer = new Welcomer();
+        String result = welcomer.sayHunter();
+        assertTrue(result.contains("hunter"), "Reply should contain the word 'hunter'");
+}
